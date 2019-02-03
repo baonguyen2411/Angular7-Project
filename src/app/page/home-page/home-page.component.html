@@ -1,0 +1,50 @@
+<div class="container-fluid p-0">
+  <div class="site-content">
+    <div class="d-flex justify-content-center" [ngsReveal]="{ reset: true}">
+      <div class="d-flex flex-column">
+        <h1 class="site-title">Juice Fruit And Cake</h1>
+        <p class="site-desc">Tea, Coffee and Cakes</p>
+
+        <div class="d-flex flex-row justify-content-center">
+          <input type="button" value="Buy Now" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
+          <input type="button" value="Juice & Food" class="btn site-btn2 px-4 py-3 mr-4 btn-light">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-juice-cake [products]="juiceFruit" (addCart)="addToCart($event)"></app-juice-cake>
+
+<div class="section-2">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-end" [ngsReveal]="{ reset: true}">
+      <div class="d-flex flex-column m-4">
+        <h1 class="heading-1">Like & Share Your Love</h1>
+        <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+        <input type="button" value="Show" class="btn btn-danger">
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-juice-cake [products]="cakes" (addCart)="addToCart($event)"></app-juice-cake>
+
+<div class="section-4 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7" [ngsReveal]="{ reset: true}">
+        <img src="../../../assets/cake-5.jpeg" alt="Cake" width="590">
+      </div>
+      <div class="col-md-5" [ngsReveal]="{ reset: true}">
+        <h1 class="text-white">Didn't Know Where to start From</h1>
+        <a href="#">Join Us</a>
+
+        <p class="para-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,142 @@
+
+.site-content {
+    background-image: url('../../../assets/image-2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .site-title, .site-desc {
+        color: white;
+        font-family: 'Righteous';
+    }
+
+    .site-title {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 50px;
+    }
+    .site-desc {
+        font-size: 14px;
+        text-align: center;
+    }
+    .site-btn1, .site-btn2 {
+        margin-top: 5%;
+        margin-bottom: 40%;
+    }
+    .site-btn1 {
+        margin-left: 6%;
+        background-color: black;
+        color: white;
+    }
+    .site-btn2 {
+        background-color: white;
+    }
+}
+
+/* Section-1, Section-3 */
+.section-3 {
+    margin-bottom: 8%;
+    .heading-1 {
+        margin-top: 8%;
+    }
+    .para-1 {
+        color: rgba(0, 0, 0, 0.59);
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 5%;
+    }
+    .card {
+        width: 20rem;
+    }
+}
+
+/* Section-2 */
+.section-2 {
+    .container-fluid {
+        background-image: url('../../../assets/cake-1.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .heading-1 {
+        margin-top: 20%;
+        margin-bottom: 4%;
+        font-family: 'Righteous';
+        width: 80%;
+        color: whitesmoke;
+    }
+    .para {
+        width: 80%;
+        font-family: 'Ubuntu';
+        color: whitesmoke;
+        margin-bottom: 7%;
+    }
+    .btn {
+        margin-bottom: 15%;
+        width: 30%;
+        padding: 2% 5%;
+    }
+}
+
+/* Section-4 */
+.section-4 {
+    margin-top: 8%;
+    .row {
+        .col-md-7, .col-md-5 {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .col-md-5 {
+            a {
+                color: lightseagreen;
+                font-size: 40px;
+                text-decoration: none;
+            }
+            .para-1 {
+                color: white;
+                font-family: 'Roboto Condensed';
+                margin-top: 7%;
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-4 {
+        .row {
+            .col-md-7 {
+                img {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .site-content {
+        .site-title {
+            padding-left: 15%;
+            font-size: 30px;
+        }
+        .site-desc {
+            font-size: 14px;
+            text-align: center;
+        }
+        .site-btn1 {
+            margin-left: 6%;
+            background-color: black;
+            color: white;
+        }
+        .site-btn2 {
+            display: none;
+        }
+    }
+    .section-4 {
+        .row {
+            .col-md-7{
+                img {
+                    width: 290px;
+                }
+            }
+        }
+    }
+}

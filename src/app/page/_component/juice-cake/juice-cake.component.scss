@@ -1,0 +1,48 @@
+/* Section-1, Section-3 */
+.section-1 {
+    margin-bottom: 8%;
+    .heading-1 {
+        margin-top: 8%;
+    }
+    .para-1 {
+        color: rgba(0, 0, 0, 0.59);
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 5%;
+    }
+    .card {
+        width: 20rem;
+        .btn {
+            width: 50%;
+        }
+        .inner {
+            overflow: hidden;
+        }
+        .inner img {
+            transition: all 1.5s ease;
+        }
+        .inner:hover img {
+            transform: scale(1.5);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-1  {
+        .card {
+            width: 14rem;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-1 {
+        .col-md-4 {
+            padding: 5%;
+            margin-left: 8%;
+            .card {
+                width: 15rem;
+            }
+        }
+    }
+}

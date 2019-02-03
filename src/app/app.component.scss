@@ -1,0 +1,81 @@
+header {
+    nav {
+        .navbar-brand {
+            font-family: 'Pacifico';
+            font-size: 35px;
+            color: lightcoral;
+        }
+        .navbar-collapse {
+            ul {
+                .nav-link {
+                    font-size: 16px;
+                    margin: 15px;
+                    color: black !important;
+                    font-family: 'Roboto Condensed';
+                }
+                .nav-link:hover {
+                    color: #00E8E8 !important;
+                }
+                .active {
+                    .nav-link {
+                        color: #00E8E8 !important;
+                    }
+                }
+            }
+            .form-inline {
+                .menu-right-btn {
+                    text-decoration: none;
+                    color: black;
+                    border: 2px solid #4a4a4a;
+                    padding: 12px 30px;
+                    border-radius: 4px;
+                    letter-spacing: .7px;
+                    font-weight: 400;
+                    vertical-align: middle;
+                    background-color: transparent;
+                    transition: all 300ms ease-in;
+                    .fa-shopping-cart {
+                        font-size: 18px;
+                    }
+                    .cart-count {
+                        color: #4a4a4a;
+                        background: #fdd835;
+                        height: 20px;
+                        border-radius: 2px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 20px;
+                        margin-left: 9px;
+                        padding: 0 6px;
+                        font-weight: 700;
+                    }
+                }
+                .menu-right-btn:hover {
+                    color: white;
+                    background-color: #00E8E8;
+                }
+            }
+        }
+    }
+}
+
+/* footer */
+.social i {
+    color: #EF5651;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 320px) {
+    footer {
+      input[type="button"] {
+          margin-top: 5%;
+      }  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-inline {
+        margin-left: 15px;
+    }
+}

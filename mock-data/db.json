@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productId": "123456794",
+      "name": "Orange Juice",
+      "type": "juice",
+      "price": 10000,
+      "img": "../../../../assets/juice-1.jpeg"
+    },
+    {
+      "id": 2,
+      "productId": "123456795",
+      "name": "Kiwi Juice",
+      "type": "juice",
+      "price": 10000,
+      "img": "../../../../assets/juice-2.jpeg"
+    },
+    {
+      "id": 3,
+      "productId": "123456796",
+      "name": "Blueberry Juice",
+      "type": "juice",
+      "price": 10000,
+      "img": "../../../../assets/juice-3.jpeg"
+    },
+    {
+      "id": 4,
+      "productId": "123456797",
+      "name": "Orange Cake",
+      "type": "cake",
+      "price": 10000,
+      "img": "../../../../assets/cake-2.jpeg"
+    },
+    {
+      "id": 5,
+      "productId": "123456798",
+      "name": "Banana cake",
+      "type": "cake",
+      "price": 10000,
+      "img": "../../../../assets/cake-3.jpeg"
+    },
+    {
+      "id": 6,
+      "productId": "123456799",
+      "name": "Blueberry Cake",
+      "type": "cake",
+      "price": 10000,
+      "img": "../../../../assets/cake-4.jpeg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "productId": "123456794",
+      "name": "Orange Juice",
+      "type": "juice",
+      "price": 10000,
+      "amout": 1,
+      "img": "../../../../assets/juice-1.jpeg"
+    }
+  ]
+}

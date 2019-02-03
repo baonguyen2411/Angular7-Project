@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="row cart_titel">
+    <div class="col">
+      <div class="cart_info_columns clearfix">
+        <div class="cart_info_col cart_info_col_product">Product</div>
+        <div class="cart_info_col cart_info_col_price">Price</div>
+        <div class="cart_info_col cart_info_col_quantity">Quantity</div>
+        <div class="cart_info_col cart_info_col_total">Total</div>
+      </div>
+    </div>
+  </div>
+  <div class="row cart_items_row" *ngFor="let product of juiceAndCakeService.cart">
+    <div class="col">
+      <div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+      <div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
+          <div class="cart_item_image">
+            <div><img [src]="product.img" alt="" height="180" alt="" /></div>
+          </div>
+          <div class="cart_item_name_container">
+            <div class="cart_item_name">
+              <a href="#">{{ product.name }}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart_item_price">{{ product.price }} VND</div>
+
+        <div class="cart_item_quantity">
+          <div class="product_quantity_container">
+            <div class="product_quantity clearfix">
+              <span>Qty</span>
+              <input id="quantity_input" type="text" pattern="[0-9]*" [value]="product.amout" />
+              <div class="quantity_buttons">
+                <div id="quantity_inc_button"
+                  class="quantity_inc quantity_control">
+                  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </div>
+                <div id="quantity_dec_button" class="quantity_dec quantity_control">
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart_item_total">{{ product.amout * product.price }} VND</div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="headerc-cart">
+    <h4 class="title-cart">Cart</h4>
+  </div>
+  <div class="body-cart">
+    <table class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Amout</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of juiceAndCakeService.cart">
+          <td style="text-align:center;">
+            <img [src]="product.img" alt="" height="180">
+          </td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }} VND</td>
+          <td>{{ product.amout }}</td>
+          <td>{{ product.amout * product.price }} VND</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+</div>
